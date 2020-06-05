@@ -22,3 +22,4 @@ def vehicle_type():
     random_bike = choice(motorbikes)
 
     return random_car
+    
