@@ -8,8 +8,8 @@ def vehicle_type():
 
     with open('vehicle.csv', 'w', newline='') as file:
         csv_writer = csv.writer(file)
-        csv_writer.writerow(['car1', 'car2', 'car3'])
-        csv_writer.writerow(['motorbike1', 'motorbike2', 'motorbike3'])
+        csv_writer.writerow(['Mercedes', 'Audi', 'BMW', 'Honda', 'Volkswagon'])
+        csv_writer.writerow(['Yamaha', 'Kawasaki', 'Ducati', 'Harley Davidson', 'Suzuki'])
 
     with open('vehicle.csv', newline='') as f:
         csv_reader = csv.reader(f)
@@ -18,7 +18,7 @@ def vehicle_type():
         motorbikes = vehicles[1]
 
     random_vehicle = choice(vehicles)
-    #random_car = choice(cars)
-    #random_bike = choice(motorbikes)
+    random_car = choice(cars)
+    random_bike = choice(motorbikes)
 
-    return random_vehicle
+    return random_car
