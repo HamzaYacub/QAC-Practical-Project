@@ -22,4 +22,4 @@ def vehicle_type():
     random_colour = choice(colours)
     random_design = choice(designs)
 
-    return random_paintjobs
+    return random_paintjob
