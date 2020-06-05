@@ -13,13 +13,13 @@ def vehicle_type():
 
     with open('vehicle.csv', newline='') as f:
         csv_reader = csv.reader(f)
-        vehicles = list(csv_reader)
-        cars = vehicles[0]
-        motorbikes = vehicles[1]
+        v_list = list(csv_reader)
+        cars = v_list[0]
+        motorbikes = v_list[1]
+        vehicles = cars + motorbikes
 
     random_vehicle = choice(vehicles)
     random_car = choice(cars)
     random_bike = choice(motorbikes)
 
-    return random_car
-    
+    return random_vehicle
