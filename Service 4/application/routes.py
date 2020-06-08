@@ -79,6 +79,7 @@ def discount():
 
         return 'Congratulations!!! Your choice of a ', vehicle, ' with a paintjob of ', paintjob, 'has won you a discount of: ', total_discount, '%!'
     elif generous:
+        
         total_discount = v_discount + p_discount
         total_discount = total_discount * 1.25
 
