@@ -1,15 +1,24 @@
-{% extends "layout.html" %}
-{% block body_content %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Car Discounts!!! - {{ title }}</title>
+	</head>
+	<body>
+		<h2>Random Car Generator</h2>
+    	<p>Buying a new car? Try winning an exclusive discount!</p>
+		<p>{{ discount_res }}</p>
+		<br>
+    	<p>Click the button below to generate a new vehicle and paintjob!</p>
+    	<button onClick="window.location.reload();">Generate</button>
+    	<br>
 
-{% for discount in discounts %}
-
-<div>
-	<h3>{{ discount.vehicle_type }} {{ discount.paintjob }}</h3>
-	<p><b>Discount Available: </b>{{ discount.discount_percent }}% off</p>
-	<p><b>Discount ID: </b>{{ discount.discount_ID }}</p>
-	<hr>
-</div>
-
-{% endfor %}
-
-{% endblock %}
+		{% for discount in discounts %}
+		<div>
+			<h3>{{ discount.vehicle_type }} {{ discount.paintjob }}</h3>
+			<p><b>Discount Available: </b>{{ discount.discount_percent }}% off</p>
+			<p><b>Discount ID: </b>{{ discount.discount_ID }}</p>
+			<hr>
+		</div>
+	   {% endfor %}
+	</body>
+</html>

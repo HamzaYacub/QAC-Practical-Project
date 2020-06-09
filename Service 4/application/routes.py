@@ -1,10 +1,10 @@
-from application import app
+from application import app, db
 from flask import request, Response
-from requests import get
+import requests
 from random import choice
 from application.models import Discounts
 
-@app.route('/discounts' methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def discount():
     
     vehicle = requests.get('http://service_2:5002').text
@@ -69,8 +69,8 @@ def discount():
         total_discount = v_discount + p_discount
 
         discount_amount = Discounts(
-            vehicle_type = vehicle
-            paintjob_type = paintjob
+            vehicle_type = vehicle,
+            paintjob_type = paintjob,
             discount_percent = total_discount
         )
 
@@ -84,8 +84,8 @@ def discount():
         total_discount = total_discount * 1.25
 
         discount_amount = Discounts(
-            vehicle_type = vehicle
-            paintjob_type = paintjob
+            vehicle_type = vehicle,
+            paintjob_type = paintjob,
             discount_percent = round(total_discount)
         )
 
@@ -94,4 +94,4 @@ def discount():
 
         return 'Congratulations!!! Your choice of a ', vehicle, ' with a paintjob of ', paintjob, 'has won you a discount of: ', total_discount, '%!'
     else:
-        return: 'There seems to have been an error!!!'
+        return 'There seems to have been an error!!!'

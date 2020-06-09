@@ -3,7 +3,7 @@ from flask import request, Response
 from random import choice
 import csv
 
-@app.route('/vehicle/type', methods=['GET'])
+@app.route('/', methods=['GET'])
 def vehicle_type():
 
     with open('vehicle.csv', 'w', newline='') as file:
