@@ -1,0 +1,67 @@
+version: "3.7"
+networks:
+  sfia2:
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+    - target: 80
+      published: 80
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: ./NGINX/nginx.conf
+      target: /etc/nginx/nginx.conf
+    environment:
+      SFIA2_DB_URI: ${SFIA2_DB_URI}
+      SECRET_KEY: ${SECRET_KEY}
+    networks:
+    - sfia2
+  service_1:
+    image: hamzay97/sfia2_service_1:latest
+    build: ./Service 1
+    ports: 
+    - target: 5001
+      published: 5001
+      protocol: tcp
+    environment:
+      SFIA2_DB_URI: ${SFIA2_DB_URI}
+      SECRET_KEY: ${SECRET_KEY}
+    networks:
+    - sfia2
+  service_2:
+    image: hamzay97/sfia2_service_2:latest
+    build: ./Service 2
+    ports: 
+    - target: 5002
+      published: 5002
+      protocol: tcp
+    environment:
+      SFIA2_DB_URI: ${SFIA2_DB_URI}
+      SECRET_KEY: ${SECRET_KEY}
+    networks:
+    - sfia2
+  service_3:
+    image: hamzay97/sfia2_service_3:latest
+    build: ./Service 3
+    ports: 
+    - target: 5003
+      published: 5003
+      protocol: tcp
+    environment:
+      SFIA2_DB_URI: ${SFIA2_DB_URI}
+      SECRET_KEY: ${SECRET_KEY}
+    networks:
+    - sfia2
+  service_4:
+    image: hamzay97/sfia2_service_4:latest
+    build: ./Service 4
+    ports: 
+    - target: 5004
+      published: 5004
+      protocol: tcp
+    environment:
+      SFIA2_DB_URI: ${SFIA2_DB_URI}
+      SECRET_KEY: ${SECRET_KEY}
+    networks:
+    - sfia2
