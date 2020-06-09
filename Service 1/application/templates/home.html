@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block body_content %}
+
+{% for discount in discounts %}
+
+<div>
+	<h3>{{ discount.vehicle_type }} {{ discount.paintjob }}</h3>
+	<p><b>Discount Available: </b>{{ discount.discount_percent }}% off</p>
+	<p><b>Discount ID: </b>{{ discount.discount_ID }}</p>
+	<hr>
+</div>
+
+{% endfor %}
+
+{% endblock %}
