@@ -8,10 +8,10 @@ from requests import get
 def home():
     discountsData = Discounts.query.all()
     
-    return render_template('home.html', title='Home', discount=discountsData)
+    return render_template('home.html', title='Home', discounts=discountsData)
 
 @app.route('/generate', methods=['GET', 'POST'])
 def generate():
-    discount = requests.get('http://service_4:5004').text
+    discount_response = requests.get('http://service_4:5004').text
 
-    return render_template('generate.html', title='Generate discount', discount_response=discount)
+    return render_template('generate.html', title='Generate discount', discount=discount_response)
