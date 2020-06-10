@@ -2,23 +2,55 @@
 <html>
 	<head>
 		<title>Car Discounts!!! - {{ title }}</title>
+		<style>
+			table, th, td {
+				border: 3px solid black;
+				border-collapse: collapse;
+				padding: 10px;
+				text-align: center;
+			}
+
+		</style>
 	</head>
 	<body>
 		<h2>Random Car Generator</h2>
-    	<p>Buying a new car? Try winning an exclusive discount!</p>
-		<p>{{ discount_res }}</p>
+		<p>Buying a new car but got no idea which one to get?</p>
+		<p>Try unlocking an exclusive combination of a vehicle and a paintjob and see which discount you obtain! </p>
 		<br>
+		<p><b><i>{{ discount_res }}</i></b></p>
+		<br>
+		<p>Not what you wanted?</p>
     	<p>Click the button below to generate a new vehicle and paintjob!</p>
-    	<button onClick="window.location.reload();">Generate</button>
-    	<br>
-
-		{% for discount in discounts %}
+		<button onClick="window.location.reload();">Generate</button>
+		<br>
+		<br>
+		<p>Why not choose an existing combination and discount from below?</p>
+		<br>
 		<div>
-			<h3>{{ discount.vehicle_type }} {{ discount.paintjob }}</h3>
-			<p><b>Discount Available: </b>{{ discount.discount_percent }}% off</p>
-			<p><b>Discount ID: </b>{{ discount.discount_ID }}</p>
-			<hr>
+			<table >
+                <tr>
+                    <th>Discount_ID</th>
+                    <th>Vehicle</th>
+                    <th>Paintjob</th>
+                    <th>Discount</th>
+                </tr>
+                {% for discount in discounts %}
+                <tr>
+                </tr>
+                    <td>
+                        {{ discount.discount_ID }}
+                    </td>
+                    <td>
+                        {{ discount.vehicle_type }}
+                    </td>
+                    <td>
+                        {{ discount.paintjob_type }}
+                    </td>
+                    <td>
+                        {{ discount.discount_percent }}% off
+                    </td>
+                {% endfor %}
+            </table>
 		</div>
-	   {% endfor %}
 	</body>
 </html>

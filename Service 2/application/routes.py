@@ -8,7 +8,7 @@ def vehicle_type():
 
     with open('vehicle.csv', 'w', newline='') as file:
         csv_writer = csv.writer(file)
-        csv_writer.writerow(['Mercedes', 'Audi', 'BMW', 'Honda', 'Volkswagon'])
+        csv_writer.writerow(['Mercedes', 'Audi', 'BMW', 'Honda', 'Volkswagen'])
         csv_writer.writerow(['Yamaha', 'Kawasaki', 'Ducati', 'Harley Davidson', 'Suzuki'])
 
     with open('vehicle.csv', newline='') as f:

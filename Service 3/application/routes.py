@@ -9,7 +9,7 @@ def vehicle_type():
     with open('paintjobs.csv', 'w', newline='') as file:
         csv_writer = csv.writer(file)
         csv_writer.writerow(['Black', 'White', 'Grey', 'Blue', 'Red', 'Yellow', 'Silver'])
-        csv_writer.writerow(['Snakeskin', 'Leopard print', 'Flames', 'Two tone', 'Green Camo', 'Steampunk'])
+        csv_writer.writerow(['Snakeskin', 'Leopard print', 'Flames', 'Two tone', 'Green camo', 'Steampunk'])
 
     with open('paintjobs.csv', newline='') as f:
         csv_reader = csv.reader(f)

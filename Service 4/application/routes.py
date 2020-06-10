@@ -12,7 +12,7 @@ def discount():
     v_discount = 0
     p_discount = 0
     total_discount = 0
-    generous = False
+    generous = True
 
     if vehicle == 'Mercedes':
         v_discount = 5
@@ -49,6 +49,8 @@ def discount():
         p_discount = 9
     elif paintjob == 'Yellow':
         p_discount = 11
+    elif paintjob == 'Silver':
+        p_discount = 13
     elif paintjob == 'Snakeskin':
         p_discount = 2
     elif paintjob == 'Leopard print':
@@ -77,7 +79,7 @@ def discount():
         db.session.add(discount_amount)
         db.session.commit()
 
-        return 'Congratulations!!! Your choice of a ', vehicle, ' with a paintjob of ', paintjob, 'has won you a discount of: ', total_discount, '%!'
+        return "Congratulations!!! You have unlocked a " + paintjob + " " + vehicle + " which has won you a discount of: " + str(total_discount) + "% off!!"
     elif generous:
         
         total_discount = v_discount + p_discount
@@ -92,6 +94,4 @@ def discount():
         db.session.add(discount_amount)
         db.session.commit()
 
-        return 'Congratulations!!! Your choice of a ', vehicle, ' with a paintjob of ', paintjob, 'has won you a discount of: ', total_discount, '%!'
-    else:
-        return 'There seems to have been an error!!!'
+        return "Congratulations!!! You have unlocked a " + paintjob + " " + vehicle + " which has won you a super discount of: " + str(round(total_discount)) + "% off!!!!!"
