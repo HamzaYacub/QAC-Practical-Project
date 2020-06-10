@@ -80,6 +80,7 @@ def discount():
         db.session.commit()
 
         return "Congratulations!!! You have unlocked a " + paintjob + " " + vehicle + " which has won you a discount of: " + str(total_discount) + "% off!!"
+    
     elif generous:
         
         total_discount = v_discount + p_discount
