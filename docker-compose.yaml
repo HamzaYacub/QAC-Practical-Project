@@ -1,6 +1,7 @@
 version: "3.7"
 networks:
   sfia2:
+    driver: overlay
 services:
   nginx:
     image: nginx:latest
@@ -17,6 +18,8 @@ services:
       SECRET_KEY: ${SECRET_KEY}
     networks:
     - sfia2
+    deploy:
+      replicas: 3
   service_1:
     image: hamzay97/sfia2_service_1:latest
     build: ./Service 1
@@ -29,6 +32,8 @@ services:
       SECRET_KEY: ${SECRET_KEY}
     networks:
     - sfia2
+    deploy:
+      replicas: 3
   service_2:
     image: hamzay97/sfia2_service_2:latest
     build: ./Service 2
@@ -41,6 +46,8 @@ services:
       SECRET_KEY: ${SECRET_KEY}
     networks:
     - sfia2
+    deploy:
+      replicas: 3
   service_3:
     image: hamzay97/sfia2_service_3:latest
     build: ./Service 3
@@ -53,6 +60,8 @@ services:
       SECRET_KEY: ${SECRET_KEY}
     networks:
     - sfia2
+    deploy:
+      replicas: 3
   service_4:
     image: hamzay97/sfia2_service_4:latest
     build: ./Service 4
@@ -65,3 +74,5 @@ services:
       SECRET_KEY: ${SECRET_KEY}
     networks:
     - sfia2
+    deploy:
+      replicas: 3
