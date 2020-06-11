@@ -1,3 +1,5 @@
 /pycache/
 *pyc
 /venv/
+/Service 1/venv/
+/Service 1/tests/.coverage
