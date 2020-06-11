@@ -4,7 +4,7 @@ from random import choice
 import csv
 
 @app.route('/', methods=['GET'])
-def vehicle_type():
+def paintjob_type():
 
     with open('paintjobs.csv', 'w', newline='') as file:
         csv_writer = csv.writer(file)
