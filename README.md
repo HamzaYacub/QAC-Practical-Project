@@ -96,6 +96,8 @@ Here is the front end design for the application. As we were mainly focused on t
 
 ### Deployment Logs
 
+![Deployment Logs][deploy-log]
+
 ### Git Branch and Merge Logs
 
 ## Testing
