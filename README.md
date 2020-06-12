@@ -169,12 +169,16 @@ Log at time of README update: 13/06/2020
 Pytest, specifically Unit testing, has been used to test the code produced in this project. Selenium was planned to be used for Integration testing however it was not fully implemented and therefore not included at this time. Only the python files in the 4 services were tested since PyTest can only test python files. Here are the coverage reports for all the tests:
 
 Service 1:
+![Coverage report for service 1][cov1]
 
 Service 2:
+![Coverage report for service 2][cov2]
 
 Service 3:
+![Coverage report for service 3][cov3]
 
 Service 4:
+![Coverage report for service 4][cov4]
 
 
 ### Analysis
@@ -192,3 +196,7 @@ Service 4:
 [deploy-log]: https://github.com/HamzaYacub/QAC-Practical-Project/blob/developer/Documentation/screenshots/Deployment%20activities.png
 [ci-server]: https://github.com/HamzaYacub/QAC-Practical-Project/blob/developer/Documentation/screenshots/CI%20Pipeline.png
 [home-screenshot]: https://github.com/HamzaYacub/QAC-Practical-Project/blob/developer/Documentation/screenshots/Home%20page.png
+[cov1]: https://github.com/HamzaYacub/QAC-Practical-Project/blob/developer/Service%201/test_results/service1%20cov.png
+[cov2]: https://github.com/HamzaYacub/QAC-Practical-Project/blob/developer/Service%202/test_results/service2%20cov.png
+[cov3]: https://github.com/HamzaYacub/QAC-Practical-Project/blob/developer/Service%203/test_results/service3%20cov.png
+[cov4]: https://github.com/HamzaYacub/QAC-Practical-Project/blob/developer/Service%204/test_results/service4%20cov.png
