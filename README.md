@@ -19,7 +19,16 @@
 
 ## Introduction
 
-The overall objective of this project was to create a service-orientated architecture consisting of at least 4 micro services that work together. 
+The overall objective of this project was to create a service-orientated architecture consisting of at least 4 micro services that work together.
+
+As I had full control over the topic of this project, I had decided to create a random vehicle and paint job generator that would give the user a special discount depending on the outcome of the vehicles and paint jobs.
+
+The 4 micro services within this project are as follow:
+
+* Service 1: Renders the Jinja2 templates based upon the outcome of service 4 as well as persisting the data in a SQL database
+* Service 2: Generates random vehicle
+* Service 3: Genrates random paintjob
+* Service 4: Creates an object (discount) based upon the results of service 2 and 3 respectively.
 
 ### Additional Requirements
 
