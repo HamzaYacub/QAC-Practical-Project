@@ -68,3 +68,20 @@ In addition to the objective, there were a minimum set of requirements which als
 
 ## Improvements for future
 
+
+
+
+[trello-link]: https://trello.com/b/oL2ikEds/sfia2-practical-project
+[trello-screenshot-link]: https://github.com/HamzaYacub/QAC-Practical-Project/blob/developer/Documentation/screenshots/Trello.png
+[erd-link]: https://github.com/HamzaYacub/QAC-Practical-Project/blob/developer/Documentation/screenshots/ERD%20diagram%20v1.png
+[erd2-link]: https://github.com/HamzaYacub/QAC-Practical-Project/blob/developer/Documentation/screenshots/ERD%20diagram%20v2.png
+[ra-link]: https://github.com/HamzaYacub/QAC-Practical-Project/blob/developer/Documentation/screenshots/Risk%20assessment.png
+[deploy-log]: https://github.com/HamzaYacub/QAC-Practical-Project/blob/developer/Documentation/screenshots/Deployment%20activities.png
+[ci-server]: https://github.com/HamzaYacub/QAC-Practical-Project/blob/developer/Documentation/screenshots/CI%20Pipeline.png
+[home-screenshot]:
+
+
+
+
+
+
