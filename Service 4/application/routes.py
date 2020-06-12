@@ -7,8 +7,8 @@ import requests
 @app.route('/', methods=['GET', 'POST'])
 def discount():
     
-    vehicle = requests.get('http://localhost:5002').text
-    paintjob = requests.get('http://localhost:5003').text
+    vehicle = requests.get('http://service_2:5002').text
+    paintjob = requests.get('http://service_3:5003').text
     v_discount = 0
     p_discount = 0
     total_discount = 0
