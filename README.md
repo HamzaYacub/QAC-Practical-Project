@@ -175,8 +175,33 @@ Here are the links to the coverage reports for each individual service:
 * [Service 3][cov3]
 * [Service 4][cov4]
 
-
 ### Analysis
+
+Although a full coverage was met for all 4 services, I had some difficulty in reaching it. Services 1 - 3 were simple and only required 1 or 2 tests each to reach full coverage as they only had simple get requests. Service 4 on the other hand proved to be quite troublesome as along with the get requests, there was also a lot of logic depending on what got pulled from the get requests. Since the get requests pulled randomly from a CSV file, it was impossible to reach full coverage doing normal tests. I had initially attempted mocking but was unsuccessful in implementing it. In order to solve this problem, I had to make a small change to my routes.py. Instead of using the get requests from service 2 and 3, I included the them as parameters in the app.route function.
+
+So instead of it being like this:
+
+@app.route('/', methods=['GET', 'POST'])
+def discount():
+    
+    vehicle = requests.get('http://service_2:5002').text
+    paintjob = requests.get('http://service_3:5003').text
+    v_discount = 0
+    p_discount = 0
+    total_discount = 0
+    generous = False
+    
+I rewrote it as:
+
+@app.route('/', methods=['GET', 'POST'])
+def discount():
+    
+    vehicle = requests.get('http://service_2:5002').text
+    paintjob = requests.get('http://service_3:5003').text
+    v_discount = 0
+    p_discount = 0
+    total_discount = 0
+    generous = False
 
 ## Improvements for future
 
