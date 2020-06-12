@@ -76,7 +76,23 @@ Here is the front end design for the application. As we were mainly focused on t
 
 ### CI Server
 
+![CI Server diagram][ci-server]
+
 ### Tools and Technologies
+
+* Python3 - Logic
+* Flask - Web development framework
+* Jinja2 - Web template for Python
+* Jenkins - CI server
+* Docker - Containerisation
+* Docker swarm - Orchestration tool
+* Ansible - Configuration management
+* NGINX - Reverse proxying
+* MySQL - Database
+* Pytest - Unit testing
+* Git - Version control system
+* Trello - Project tracking
+* Google cloud platform - Live environment
 
 ### Deployment Logs
 
