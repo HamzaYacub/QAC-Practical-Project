@@ -68,6 +68,10 @@ This updated ERD only shows the one table rather than the multiple tables I had 
 
 ## Design
 
+Here is the front end design for the application. As we were mainly focused on the backend and functionality of the project, the mark scheme does not go into any detail regarding the front end, only that it is functioning as it should. Therefore, only very basic CSS was used.
+
+![Home page][home-screenshot]
+
 ## Deployment
 
 ### CI Server
