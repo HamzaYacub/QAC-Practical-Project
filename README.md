@@ -169,15 +169,22 @@ Log at time of README update: 13/06/2020
 Pytest, specifically Unit testing, has been used to test the code produced in this project. Selenium was planned to be used for Integration testing however it was not fully implemented and therefore not included at this time. Only the python files in the 4 services were tested since PyTest can only test python files. Here are the coverage reports for all the tests:
 
 Service 1:
+
 ![Coverage report for service 1][cov1]
 
+
 Service 2:
+
 ![Coverage report for service 2][cov2]
 
+
 Service 3:
+
 ![Coverage report for service 3][cov3]
 
+
 Service 4:
+
 ![Coverage report for service 4][cov4]
 
 
