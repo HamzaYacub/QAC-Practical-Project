@@ -78,10 +78,4 @@ In addition to the objective, there were a minimum set of requirements which als
 [ra-link]: https://github.com/HamzaYacub/QAC-Practical-Project/blob/developer/Documentation/screenshots/Risk%20assessment.png
 [deploy-log]: https://github.com/HamzaYacub/QAC-Practical-Project/blob/developer/Documentation/screenshots/Deployment%20activities.png
 [ci-server]: https://github.com/HamzaYacub/QAC-Practical-Project/blob/developer/Documentation/screenshots/CI%20Pipeline.png
-[home-screenshot]:
-
-
-
-
-
-
+[home-screenshot]: https://github.com/HamzaYacub/QAC-Practical-Project/blob/developer/Documentation/screenshots/Home%20page.png
