@@ -9,7 +9,7 @@
   * [Entity Relationship Diagrams](#entity-relationship-diagrams)
 * [Design](#design)
 * [Deployment](#deployment)
-  * [CI Server](#ci-server)
+  * [CI Pipeline](#ci-pipeline)
   * [Tools and Technologies](#tools-and-technologies)
   * [Deployment Logs](#deployment-log)
   * [Git Branch and Merge Logs](#git-branch-and-merge-logs)
@@ -74,7 +74,7 @@ Here is the front end design for the application. As we were mainly focused on t
 
 ## Deployment
 
-### CI Server
+### CI Pipeline
 
 ![CI Server diagram][ci-server]
 
