@@ -44,11 +44,27 @@ In addition to the objective, there were a minimum set of requirements which als
 
 ## Project Tracking
 
+A [Trello][trello-link] board was used to organise this project of all of its respective requirements and tasks. This was done in accordance to the MoSCoW principles.
+
+![Trello screenshot][trello-screenshot-link]
+
 ## Risk Assessment
+
+![Risk Assessment][ra-link]
 
 ## Architecture
 
 ### Entity Relationship Diagrams
+
+This was the initial design of the entity-relationship model which highlights the components and the relationships between the tables.
+
+![ERD][erd-link]
+
+However after careful consideration and a look at the requirements, it was clear that multiple tables were not necessary and therefore only 1 table was needed in order to persist all the required data.
+
+![ERD2][erd2-link]
+
+This updated ERD only shows the one table rather than the multiple tables I had before 
 
 ## Design
 
