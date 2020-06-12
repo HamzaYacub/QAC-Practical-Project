@@ -100,6 +100,70 @@ Here is the front end design for the application. As we were mainly focused on t
 
 ### Git Branch and Merge Logs
 
+Log at time of README update: 13/06/2020
+
+* 6bce40d (HEAD -> developer, origin/developer) added screenshots
+* 538f0c8 Update README.md
+* 7a19714 Update README.md
+* dc2f3c0 Create README.md
+* 231d1ca Delete .DS_Store
+* 2f2e32a added all documentation and screenshots
+* 1c23985 acheived 100% coverage
+* 839572a fixed requests url
+* df29ec8 (origin/testing) deleted irrelevant requirements.txt
+* 04b956a added testing for service 4
+* 510c3c1 update script
+* ffbcf24 updated testing
+* 02fed1b added testing for service 3
+* d96b0d9 tested service 2
+* 9ced4f5 update
+* 97982bb testing done for service 1
+* c56912e added files to be ignored
+* 9fd1fc9 changed implementation
+* b8d66f1 update html
+* d0c3f2f (origin/dev-test) change implementation
+* f86ef2b changed implementation
+* e6bd9f0 modified implementation
+* e236caa added build command in pipeline
+* e6e2f08 (origin/developer-2) test implementation 2
+* 355837f update
+* ea2a79e update html
+* 5081605 (origin/jenkins) added implementation
+* 6681a15 update script
+* 1f90c68 updated scripts
+* c9d46c0 updated scripts
+* 29afff0 added Jenkinsfile
+* 2e8ca25 added scripts
+* 6150301 updated for docker stack
+* 09e7c38 (origin/docker_swarm) added ansible playbooks
+* a20e434 fixed requests error
+* 81ce45a changed routes for services
+* 8d8e1cb added docker-compose.yaml
+* a4029b4 added Dockerfiles and requirements for all services
+* 15e1b97 changed nginx.conf
+* e378d59 added html pages
+* 8a908bb completed routes for service 1
+* f1d98ed added logic for service 4
+* 69cb58d added generate.html
+* ae0121e added route for generate page
+* aa1c551 added service 1 logic
+* c58da5d devised models for database
+* 75d3f10 creation of tables
+* aac9994 completed logic for service 4
+* 31d28f6 added arguments to __init__.py
+* 8631df6 added nginx.conf
+* c445db6 changed ports for services
+* e766279 fixed issue in previous modification
+* 0a1e87f modified service 3
+* 005f1d1 modified service 2
+* c8ad7c5 added functionality for service 2
+* c91bd78 added functionality for service 3
+* 53175bd added functionality for service 3
+* fcc2cce added service 3
+* 383302e added service 2
+* 95dba7a (origin/master, origin/HEAD, master) created template for project
+* bea76e4 Initial commit
+
 ## Testing
 
 ### Analysis
