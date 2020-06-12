@@ -32,10 +32,8 @@ def discount():
         v_discount = 17
     elif vehicle == 'Harley Davidson':
         v_discount = 22
-    elif vehicle == 'Suzuki':
-        v_discount = 27
     else:
-        v_discount = 0
+        v_discount = 27
 
     if paintjob == 'Black':
         p_discount = 1
@@ -61,10 +59,8 @@ def discount():
         p_discount = 8
     elif paintjob == 'Green camo':
         p_discount = 10
-    elif paintjob == 'Steampunk':
-        p_discount = 12
     else:
-        p_discount = 0
+        p_discount = 12
 
     if not generous:
 
