@@ -7,6 +7,6 @@ import requests
 @app.route('/home', methods=['GET', 'POST'])
 def home():
     discountsData = Discounts.query.distinct()
-    discount_response = requests.get('http://service_4:5004').text
+    discount_response = requests.get('http://localhost:5004').text
     
     return render_template('home.html', title='Home', discounts=discountsData, discount_res=discount_response)

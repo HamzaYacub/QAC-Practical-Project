@@ -28,12 +28,6 @@ class TestBase(TestCase):
         db.drop_all()
         db.create_all()
 
-        vehicle1 = Discounts(
-            vehicle_type = 'Honda', 
-            paintjob_type = 'Silver', 
-            discount_percent = 38
-            )
-
     def tearDown(self):
         """
         Will be called after every test
