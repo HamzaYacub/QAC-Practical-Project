@@ -10,8 +10,8 @@
 * [Design](#design)
 * [Deployment](#deployment)
   * [Tools and Technologies](#tools-and-technologies)
-  * [CI Pipeline](#ci-pipeline)
-  * [Deployment Logs](#deployment-log)
+  * [Pipeline](#pipeline)
+  * [CI server](#ci-server)
   * [Git Branch and Merge Logs](#git-branch-and-merge-logs)
 * [Testing](#testing)
   * [Analysis](#analysis)
@@ -90,13 +90,13 @@ Here is the front end design for the application. As we were mainly focused on t
 * Trello - Project tracking
 * Google cloud platform - Live environment
 
-### CI Pipeline
+### Pipeline
 
 ![CI Server diagram][ci-server]
 
 Explain the pipeline here
 
-### Deployment Logs
+### CI server
 
 ![Deployment Logs][deploy-log]
 
