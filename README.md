@@ -209,7 +209,7 @@ def discount(vehicle, paintjob, generous):
     #generous = False
 ~~~~
 
-Doing this allowed me to check that every vehicle and paintjob was being correctly incorporated as well as checking my second implementation for service 4 - generous discounts.
+Doing this allowed me to check that every vehicle and paintjob was being correctly utilised as well as checking my second implementation for service 4 - generous discounts - was functional.
 
 ## Improvements for future
 
