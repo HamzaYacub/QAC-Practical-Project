@@ -113,7 +113,7 @@ Jenkins was used as the CI server for this project. A pipeline was made which fo
 
 Ansible was used to configure each virtual machine that was going to be included in the swarm so that they can successfully deploy the application. This was done through the use of a playbook.yaml which ran tasks on all respective VMs. These tasks were to first install docker on all machines. Then initialising the docker swarm and then subsequently, connecting the respective manager and worker nodes to the swarm.
 
-
+The playbook was then organised with roles, which allowed tasks to be reused for the different VMs. Since docker needed to be installed on every VM, this task had occurred multiple times until the requirement was satisfied. An inventory.cfg file was created so that the different VMs could be grouped together. The roles along with the inventory file allowed the playbook to become much more efficient and organised.
 
 ### Git Branch and Merge Logs
 
