@@ -194,14 +194,16 @@ def discount():
 I rewrote it as:
 
 @app.route('/', methods=['GET', 'POST'])
-def discount():
+def discount(vehicle, paintjob, generous):
     
-    vehicle = requests.get('http://service_2:5002').text
-    paintjob = requests.get('http://service_3:5003').text
+    #vehicle = requests.get('http://service_2:5002').text
+    #paintjob = requests.get('http://service_3:5003').text
     v_discount = 0
     p_discount = 0
     total_discount = 0
-    generous = False
+    #generous = False
+    
+Doing this allowed me to check that every vehicle and paintjob was being correctly incorporated as well as checking my second implementation for service 4 - generous discounts.
 
 ## Improvements for future
 
