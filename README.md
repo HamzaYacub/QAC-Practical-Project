@@ -78,6 +78,7 @@ Here is the front end design for the application. As we were mainly focused on t
 
 * Python3 - Logic
 * Flask - Web development framework
+* Visual Studio Code - IDE
 * Jinja2 - Web template for Python
 * Jenkins - CI server
 * Docker - Containerisation
