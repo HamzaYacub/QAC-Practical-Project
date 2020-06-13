@@ -26,7 +26,7 @@ The overall objective of this project was to create a service-orientated archite
 
 As I had full control over the topic of this project, I had decided to create a random vehicle and paint job generator that would give the user a special discount depending on the outcome of the vehicles and paint jobs.
 
-The 4 micro services within this project are as follow:
+The 4 micro services within this project are as follows:
 
 * Service 1: Renders the Jinja2 templates based upon the outcome of service 4 as well as persisting the data in a SQL                    database
 * Service 2: Generates random vehicle
