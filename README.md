@@ -74,11 +74,13 @@ Here is the front end design for the application. As we were mainly focused on t
 
 ## Deployment
 
+![CI Server diagram][ci-server]
+
 ### Tools and Technologies
 
 * Python3 - Logic
 * Flask - Web development framework
-* Visual Studio Code - IDE
+* VS Code - IDE
 * Jinja2 - Web template for Python
 * Jenkins - CI server
 * Docker - Containerisation
@@ -91,11 +93,9 @@ Here is the front end design for the application. As we were mainly focused on t
 * Trello - Project tracking
 * Google cloud platform - Live environment
 
-### Pipeline
+This all starts from the Trello board, where tasks are tracked and organised. Once a task has been chosen, code was then developed in VS Code using Python3 and Flask. Once a task had been complete, it could be commited and pushed to GitHub, the version control system of choice for this project. Once pushed, the Trello board can be updated to complete the task. Before taking on a new task, the code had to be pulled from GitHub to ensure that the latest code is being worked on. 
 
-![CI Server diagram][ci-server]
-
-Explain the pipeline here
+Afterwards, a CI server was implemented, in this case, Jenkins. Webhooks were created between GitHub and Jenkins so that when any code was pushed to the Developer branch, the pipeline would automatically start building. The pipeline was made up of shell scripts and a Jenkinsfile which ran the various steps required to deploy the project. Docker and specifically, Dockerfiles, was used to build the images of all the micro services. These images would then get pushed to DockerHub. Ansible was used in this pipeline as a configuration management tool, which essentially configures all the VMs included so that they are ready for the Docker swarm to deploy the application. NGINX was then used as a reverse proxy for the ports being used. In this case, port 5001, was being reverse proxied to port 80. This entire process was automated through Jenkins and no further configuration is required.
 
 ### CI server
 
