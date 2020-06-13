@@ -58,7 +58,7 @@ A [Trello][trello-link] board was used to organise this project of all of its re
 
 ### Database
 
-Since there needed to be some data persistance, a database was required. The database used for this project was a MySQL instance hosted by GCP. As I had already used this for another project and was comfortable with it, I decided on this rather than a MySQL image deployed by Docker. 
+Since there needed to be some data persistance, a database was required. The database used for this project was a MySQL instance hosted by GCP. As I had already used this for another project and was comfortable with it, I decided on this rather than a MySQL image deployed by Docker. What needed to be stored in the database was the vehicle, the paint job and the discount produced from these two constraints.
 
 ### Entity Relationship Diagrams
 
