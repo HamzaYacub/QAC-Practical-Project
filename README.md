@@ -6,6 +6,7 @@
 * [Project Tracking](#project-tracking)
 * [Risk Assessment](#risk-assessment)
 * [Architecture](#architecture)
+  * [Database](#database)
   * [Entity Relationship Diagrams](#entity-relationship-diagrams)
 * [Design](#design)
 * [Deployment](#deployment)
@@ -13,7 +14,6 @@
   * [Pipeline](#pipeline)
   * [CI server](#ci-server)
   * [Configuration Management](#configuration-management)
-  * [Database](#database)
   * [Git Branch and Merge Logs](#git-branch-and-merge-logs)
 * [Testing](#testing)
   * [Analysis](#analysis)
@@ -56,9 +56,13 @@ A [Trello][trello-link] board was used to organise this project of all of its re
 
 ## Architecture
 
+### Database
+
+Since there needed to be some data persistance, a database was required. The database used for this project was a MySQL instance hosted by GCP. As I had already used this for another project and was comfortable with it, I decided on this rather than a MySQL image deployed by Docker. 
+
 ### Entity Relationship Diagrams
 
-This was the initial design of the entity-relationship model which highlights the components and the relationships between the tables.
+Before creating the database, it is crucial to make and stick to a design. This is done so that the objectives are always clear at all times. This was the initial design of the entity-relationship model which highlights the components and the relationships between the tables.
 
 ![ERD][erd-link]
 
@@ -107,7 +111,7 @@ Jenkins was used as the CI server for this project. A pipeline was made which fo
 
 ### Configuration Management
 
-### Database
+
 
 ### Git Branch and Merge Logs
 
