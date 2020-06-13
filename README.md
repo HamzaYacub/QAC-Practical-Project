@@ -14,7 +14,8 @@
   * [Pipeline](#pipeline)
   * [CI server](#ci-server)
   * [Configuration Management](#configuration-management)
-  * [Git Branch and Merge Logs](#git-branch-and-merge-logs)
+  * [Git](#git)
+    * [Git Branch and Merge Logs](#git-branch-and-merge-logs)
 * [Testing](#testing)
   * [Analysis](#analysis)
 * [Improvements for future](#improvements-for-future)
@@ -115,7 +116,17 @@ Ansible was used to configure each virtual machine that was going to be included
 
 The playbook was then organised with roles, which allowed tasks to be reused for the different VMs. Since docker needed to be installed on every VM, this task had occurred multiple times until the requirement was satisfied. An inventory.cfg file was created so that the different VMs could be grouped together. The roles along with the inventory file allowed the playbook to become much more efficient and organised.
 
-### Git Branch and Merge Logs
+### Git
+
+In this project, Git was used in order to:
+
+* Keep track of the build history for all the files in this project.
+* Enable the gradual integration of working features.
+* Allow new features to be developed and tested in separate branches. Once complete they can merge back into the developer     branch. Once merged, these branches can then be deleted to keep a clean working tree.
+* Enable webhooks for the CI server so that the pipeline can automatically build when something is pushed to GitHub.
+* Ignore files that do not need to be pushed to GitHub with the use of a .gitignore file.
+
+#### Git Branch and Merge Logs
 
 Log at time of README update: 12/06/2020
 
@@ -181,15 +192,7 @@ Log at time of README update: 12/06/2020
 * 383302e added service 2
 * 95dba7a (origin/master, origin/HEAD, master) created template for project
 * bea76e4 Initial commit
-~~~
-
-In this project, Git was used in order to:
-
-* Keep track of the build history for all the files in this project.
-* Enable the gradual integration of working features.
-* Allow new features to be developed and tested in separate branches. Once complete they can merge back into the developer   branch.
-* Enable webhooks for the CI server so that the pipeline can automatically build when something is pushed to GitHub.
-* Ignore files that do not need to be pushed to GitHub with the use of a .gitignore file. 
+~~~ 
 
 ## Testing
 
