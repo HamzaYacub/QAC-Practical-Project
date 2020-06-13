@@ -25,7 +25,7 @@ As I had full control over the topic of this project, I had decided to create a 
 
 The 4 micro services within this project are as follow:
 
-* Service 1: Renders the Jinja2 templates based upon the outcome of service 4 as well as persisting the data in a SQL database
+* Service 1: Renders the Jinja2 templates based upon the outcome of service 4 as well as persisting the data in a SQL                    database
 * Service 2: Generates random vehicle
 * Service 3: Genrates random paintjob
 * Service 4: Creates an object (discount) based upon the results of service 2 and 3 respectively.
@@ -36,11 +36,11 @@ In addition to the objective, there were a minimum set of requirements which als
 
 * An Asana board (or equivalent Kanban board tech) with full expansion on tasks needed to complete the project.
   * This could also provide a record of any issues or risks that you faced creating your project.
-* An Application fully integrated using the Feature-Branch model into a Version Control System which will subsequently be built through a CI server and deployed to a cloud-based virtual machine.
-  * If a change is made to a code base, then Web hooks should be used so that Jenkins recreates and redeploys the changed application
+* An Application fully integrated using the Feature-Branch model into a Version Control System which will subsequently be     built through a CI server and deployed to a cloud-based virtual machine.
+  * If a change is made to a code base, then Web hooks should be used so that Jenkins recreates and redeploys the changed       application
 * The project must follow the Micro Services architecture that has been asked for
 * The project must be deployed using containerisation and an orchestration tool.
-* As part of the project you need to create an Ansible Playbook that will provision the environment that your application needs to run.
+* As part of the project you need to create an Ansible Playbook that will provision the environment that your application     needs to run.
 
 ## Project Tracking
 
@@ -170,7 +170,13 @@ Log at time of README update: 13/06/2020
 * bea76e4 Initial commit
 ~~~
 
-Explain why/how git was used as the VCS in this project
+In this project, Git was used in order to:
+
+* Keep track of the build history for all the files in this project.
+* Enable the gradual integration of working features.
+* Allow new features to be developed and tested in separate branches. Once complete they can merge back into the developer   branch.
+* Enable webhooks for the CI server so that the pipeline can automatically build when something is pushed to GitHub.
+* Ignore files that do not need to be pushed to GitHub with the use of a .gitignore file. 
 
 ## Testing
 
