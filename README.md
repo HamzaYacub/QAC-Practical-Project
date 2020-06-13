@@ -9,8 +9,8 @@
   * [Entity Relationship Diagrams](#entity-relationship-diagrams)
 * [Design](#design)
 * [Deployment](#deployment)
-  * [CI Pipeline](#ci-pipeline)
   * [Tools and Technologies](#tools-and-technologies)
+  * [CI Pipeline](#ci-pipeline)
   * [Deployment Logs](#deployment-log)
   * [Git Branch and Merge Logs](#git-branch-and-merge-logs)
 * [Testing](#testing)
@@ -74,10 +74,6 @@ Here is the front end design for the application. As we were mainly focused on t
 
 ## Deployment
 
-### CI Pipeline
-
-![CI Server diagram][ci-server]
-
 ### Tools and Technologies
 
 * Python3 - Logic
@@ -94,9 +90,17 @@ Here is the front end design for the application. As we were mainly focused on t
 * Trello - Project tracking
 * Google cloud platform - Live environment
 
+### CI Pipeline
+
+![CI Server diagram][ci-server]
+
+Explain the pipeline here
+
 ### Deployment Logs
 
 ![Deployment Logs][deploy-log]
+
+Explain the deployment log here
 
 ### Git Branch and Merge Logs
 
@@ -165,6 +169,8 @@ Log at time of README update: 13/06/2020
 * 95dba7a (origin/master, origin/HEAD, master) created template for project
 * bea76e4 Initial commit
 ~~~
+
+Explain why/how git was used as the VCS in this project
 
 ## Testing
 
