@@ -219,7 +219,27 @@ Doing this allowed me to check that every vehicle and paintjob was being correct
 
 ## Improvements for future
 
+Initially, it was planned to include full CRUD functionality for the application. A user would have been able to choose either a vehicle or paintjob from an exisiting table and then randomise the other option. So if they chose a vehicle, the paint job would be randomised and vice versa. They would also be able to update the record if they wanted to and re-randomise the paint job again. And finally, if wanted, they could also delete the record.
 
+In order to achieve this:
+
+* The database would have to be modified to look like the initial erd plan.
+* WTForms would have to be utilised to allow the user to pick their respective options.
+
+If this implementation was applied, then it could have been improved further to inlcude a login system so that users can only see their past vehicle combinations rather than everyone's choices.
+
+With regards to the CI pipeline:
+
+* Deploy to more nodes.
+* Create more replicas for each respective node.
+* Change update method to incorporate polling DockerHub webhooks.
+* Expand after-deployment processing to automate merge requests.
+
+To improve testing:
+
+* Testing could be expanded to include stress testing of containers.
+* Testing could be expanded to include stress testing of VMs.
+* Selenium testing could be utilised to test the front end for its functionality
 
 
 [trello-link]: https://trello.com/b/oL2ikEds/sfia2-practical-project
