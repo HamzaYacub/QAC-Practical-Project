@@ -181,6 +181,7 @@ Although a full coverage was met for all 4 services, I had some difficulty in re
 
 So instead of it being like this:
 
+~~~
 @app.route('/', methods=['GET', 'POST'])
 def discount():
     
@@ -190,9 +191,11 @@ def discount():
     p_discount = 0
     total_discount = 0
     generous = False
-    
+~~~
+
 I rewrote it as:
 
+~~~
 @app.route('/', methods=['GET', 'POST'])
 def discount(vehicle, paintjob, generous):
     
@@ -202,7 +205,8 @@ def discount(vehicle, paintjob, generous):
     p_discount = 0
     total_discount = 0
     #generous = False
-    
+~~~~
+
 Doing this allowed me to check that every vehicle and paintjob was being correctly incorporated as well as checking my second implementation for service 4 - generous discounts.
 
 ## Improvements for future
