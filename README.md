@@ -259,9 +259,9 @@ With regards to the CI pipeline:
 
 To improve testing:
 
-* Testing could be expanded to include stress testing of containers.
-* Testing could be expanded to include stress testing of VMs.
 * Selenium testing could be utilised to test the front end for its functionality
+* Containers could be stress tested
+* VMs could also potentially be stress tested
 
 
 [trello-link]: https://trello.com/b/oL2ikEds/sfia2-practical-project
