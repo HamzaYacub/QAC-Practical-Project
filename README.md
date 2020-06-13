@@ -111,11 +111,13 @@ Jenkins was used as the CI server for this project. A pipeline was made which fo
 
 ### Configuration Management
 
+Ansible was used to configure each virtual machine that was going to be included in the swarm so that they can successfully deploy the application. This was done through the use of a playbook.yaml which ran tasks on all respective VMs. These tasks were to first install docker on all machines. Then initialising the docker swarm and then subsequently, connecting the respective manager and worker nodes to the swarm.
+
 
 
 ### Git Branch and Merge Logs
 
-Log at time of README update: 13/06/2020
+Log at time of README update: 12/06/2020
 
 ~~~
 * 6bce40d (HEAD -> developer, origin/developer) added screenshots
