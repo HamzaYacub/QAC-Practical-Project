@@ -102,6 +102,7 @@ Here is the front end design for the application. As we were mainly focused on t
 
 Log at time of README update: 13/06/2020
 
+~~~
 * 6bce40d (HEAD -> developer, origin/developer) added screenshots
 * 538f0c8 Update README.md
 * 7a19714 Update README.md
@@ -163,6 +164,7 @@ Log at time of README update: 13/06/2020
 * 383302e added service 2
 * 95dba7a (origin/master, origin/HEAD, master) created template for project
 * bea76e4 Initial commit
+~~~
 
 ## Testing
 
