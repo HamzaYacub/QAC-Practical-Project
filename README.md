@@ -12,6 +12,8 @@
   * [Tools and Technologies](#tools-and-technologies)
   * [Pipeline](#pipeline)
   * [CI server](#ci-server)
+  * [Configuration Management](#configuration-management)
+  * [Database](#database)
   * [Git Branch and Merge Logs](#git-branch-and-merge-logs)
 * [Testing](#testing)
   * [Analysis](#analysis)
@@ -101,7 +103,11 @@ Afterwards, a CI server was implemented, in this case, Jenkins. Webhooks were cr
 
 ![Deployment Logs][deploy-log]
 
-Jenkins was used as the CI server for this project. A pipeline was made which followed a combination of build steps to deploy the application. As seen in the deployment log above, the first step that occurred was pulling the latest code pushed from GitHub which was automated through the use of a webhook. The second step was to change the permissions of the scripts so that they were executable so that they can actually run. These scripts are what make up the following steps in the deployment. The first script to run exports all the environment variables required. Next, Ansible is installed and configures the VMs that the application will be deployed on. The final involves rebuilding the images for each of the four services and subsequently pushing them to Docker Hub. After this, Docker swarm is then initiated across the VMs that were configured earlier by Ansible. 
+Jenkins was used as the CI server for this project. A pipeline was made which followed a combination of build steps to deploy the application. As seen in the deployment log above, the first step that occurred was pulling the latest code pushed from GitHub which was automated through the use of a webhook. The second step was to change the permissions of the scripts so that they were executable so that they can actually run. These scripts are what make up the following steps in the deployment. The first script to run exports all the environment variables required. Next, Ansible is installed and configures the VMs that the application will be deployed on. The final involves rebuilding the images for each of the four services and subsequently pushing them to Docker Hub. After this, Docker swarm is then initiated across the VMs that were configured earlier by Ansible.
+
+### Configuration Management
+
+### Database
 
 ### Git Branch and Merge Logs
 
