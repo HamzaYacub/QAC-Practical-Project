@@ -12,7 +12,7 @@ def discount():
     v_discount = 0
     p_discount = 0
     total_discount = 0
-    generous = False
+    generous = True
 
     if vehicle == 'Mercedes':
         v_discount = 5
