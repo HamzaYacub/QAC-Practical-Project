@@ -22,4 +22,4 @@ def paintjob_type():
     random_colour = choice(colours)
     random_design = choice(designs)
 
-    return random_colour
+    return random_design
